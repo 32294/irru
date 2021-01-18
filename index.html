@@ -1,8 +1,16 @@
 <style>
+p {
+color: #3399ff;
+margin-left: 5px;
+font-size: 15px;
+padding: 10px;
+text-decoration: none;
+}
 .resp-container {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
+    display:;
 }
 .resp-iframe {
     position: absolute;
@@ -13,9 +21,46 @@
     border: 0;
 }
 body {
-    background-color: #333333
-}    
+  background-color: #333333
+  }
+.button {
+  border: none;
+  color: #3399ff;
+  background-color: #333333;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #555555;
+}
 </style>
+<script>
+function F1() {
+  var x = document.getElementById("D1");
+    x.style.display = "block";
+  var xx = document.getElementById("D2");
+    xx.style.display = "none"
+}
+function F2() {
+  var x = document.getElementById("D1");
+    x.style.display = "none"
+  var xx = document.getElementById("D2");
+    xx.style.display = "block"
+}
+</script>
+<button class=button onclick="F1()">Normal RR</button>
+<button class=button onclick="F2()">LSRR</button>
+<div id="D1">
 <div class="resp-container">
     <iframe class="resp-iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+<div hidden id="D2">
+<div class="resp-container">
+    <iframe class="resp-iframe" src="https://www.youtube.com/embed/moZtoMP7HAA" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+</div>
 </div>
