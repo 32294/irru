@@ -46,6 +46,22 @@ body {
   background-color: #222222;
 }
 </style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js">
+Mousetrap.bind('n', function(e) {
+  var x = document.getElementById("D1");
+    x.style.display = "none";
+  var xx = document.getElementById("D2");
+    xx.style.display = "none"
+  var xxx = document.getElementById("D3");
+    xxx.style.display = "none"
+  var xxxx = document.getElementById("D4");
+    xxxx.style.display = "none"
+  var bh = document.getElementById("bh");
+    bh.style.display = "none"
+  var nep = document.getElementById("nep");
+    nep.style.display = "none"
+});
+</script>
 <script>
 function BH() {
   var bh = document.getElementById("bh");
@@ -117,5 +133,12 @@ function F4() {
 <div hidden id="D4">
 <div class="resp-container">
     <iframe class="resp-iframe" src="https://www.youtube.com/embed/U-g8y4fCSzg" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+<div hidden id="nep">
+<div class="resp-container">
+    <iframe class="resp-iframe" src="https://www.youtube.com/embed/Y5BVAEG50mM" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
 </div>
 </div>
