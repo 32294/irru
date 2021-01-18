@@ -24,7 +24,10 @@ body {
   background-color: #333333
   }
 .button {
-  border: none;
+  border: double;
+  border-color: #3399ff;
+  border-width: 1px;
+  width: 130px;
   color: #3399ff;
   background-color: #333333;
   text-align: center;
@@ -40,21 +43,57 @@ body {
 }
 </style>
 <script>
+function BH() {
+  var bh = document.getElementById("bh");
+    bh.style.display = "none"
+}
 function F1() {
   var x = document.getElementById("D1");
     x.style.display = "block";
   var xx = document.getElementById("D2");
     xx.style.display = "none"
-}
+  var xxx = document.getElementById("D3");
+    xxx.style.display = "none"
+  var xxxx = document.getElementById("D4");
+    xxxx.style.display = "none"
 function F2() {
   var x = document.getElementById("D1");
     x.style.display = "none"
   var xx = document.getElementById("D2");
     xx.style.display = "block"
+  var xxx = document.getElementById("D3");
+    xxx.style.display = "none"
+  var xxxx = document.getElementById("D4");
+    xxxx.style.display = "none"
+}
+function F3() {
+  var x = document.getElementById("D1");
+    x.style.display = "none"
+  var xx = document.getElementById("D2");
+    xx.style.display = "none"
+  var xxx = document.getElementById("D3");
+    xxx.style.display = "block"
+  var xxxx = document.getElementById("D4");
+    xxxx.style.display = "none"
+}
+function F4() {
+  var x = document.getElementById("D1");
+    x.style.display = "none"
+  var xx = document.getElementById("D2");
+    xx.style.display = "none"
+  var xxx = document.getElementById("D3");
+    xxx.style.display = "none"
+  var xxxx = document.getElementById("D4");
+    xxxx.style.display = "block"
 }
 </script>
+<div id=bh>
+<button class=button onclick="BH()">Hide buttons</button>
 <button class=button onclick="F1()">Normal RR</button>
 <button class=button onclick="F2()">LSRR</button>
+<button class=button onclick="F3()">In Order</button>
+<button class=button onclick="F4()">Megolovania</button>
+</div>
 <div id="D1">
 <div class="resp-container">
     <iframe class="resp-iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
@@ -63,5 +102,15 @@ function F2() {
 <div hidden id="D2">
 <div class="resp-container">
     <iframe class="resp-iframe" src="https://www.youtube.com/embed/moZtoMP7HAA" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+<div hidden id="D3">
+<div class="resp-container">
+    <iframe class="resp-iframe" src="https://www.youtube.com/embed/Svj1bZz2mXw" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+<div hidden id="D4">
+<div class="resp-container">
+    <iframe class="resp-iframe" src="https://www.youtube.com/embed/SpZ2FsEfwP4" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
 </div>
 </div>
