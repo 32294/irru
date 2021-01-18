@@ -42,6 +42,13 @@ body {
   cursor: pointer;
   outline:none;
 }
+.button2 {
+  border: none;
+  width: 10px;
+  color: #333333;
+  outline: none;
+  display: inline-block;
+}    
 .button:hover {
   background-color: #222222;
 }
@@ -91,13 +98,29 @@ function F4() {
   var xxxx = document.getElementById("D4");
     xxxx.style.display = "block"
 }
+function nep() {
+  var x = document.getElementById("D1");
+    x.style.display = "none"
+  var xx = document.getElementById("D2");
+    xx.style.display = "none"
+  var xxx = document.getElementById("D3");
+    xxx.style.display = "none"
+  var xxxx = document.getElementById("D4");
+    xxxx.style.display = "none"
+  var bh = document.getElementById("bh");
+    bh.style.display = "none"
+  var nep = document.getElementById("nep");
+    nep.style.display = "none"
+}
 </script>
 <div class=bh id="bh">
+<button class=button2 onclick="nep()"></button>
 <button class=button onclick="F1()">Normal RR</button>
 <button class=button onclick="F3()">In Order</button>    
 <button class=button onclick="BH()">Hide buttons</button>
 <button class=button onclick="F2()">LSRR</button>
 <button class=button onclick="F4()">Megolovania</button>
+<button class=button2 onclick="m()"></button>
 </div>
 <div id="D1">
 <div class="resp-container">
