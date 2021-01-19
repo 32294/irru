@@ -195,7 +195,7 @@ function m() {
   var spam = document.getElementById("sbutton");
     spam.style.display = "none"
 }
-function spam() {
+document.addEventListener("fullscreenchange", function() {
   var x = document.getElementById("D1");
     x.style.display = "none"
   var xx = document.getElementById("D2");
@@ -210,9 +210,55 @@ function spam() {
     nep.style.display = "none"
   var spam = document.getElementById("spam");
     spam.style.display = "block"
-  var spam = document.getElementById("sbutton");
-    spam.style.display = "none"
-}        
+});
+document.addEventListener("mozfullscreenchange", function() {
+  var x = document.getElementById("D1");
+    x.style.display = "none"
+  var xx = document.getElementById("D2");
+    xx.style.display = "none"
+  var xxx = document.getElementById("D3");
+    xxx.style.display = "none"
+  var xxxx = document.getElementById("D4");
+    xxxx.style.display = "none"
+  var bh = document.getElementById("bh");
+    bh.style.display = "none"
+  var nep = document.getElementById("m");
+    nep.style.display = "none"
+  var spam = document.getElementById("spam");
+    spam.style.display = "block"
+});
+document.addEventListener("webkitfullscreenchange", function() {
+  var x = document.getElementById("D1");
+    x.style.display = "none"
+  var xx = document.getElementById("D2");
+    xx.style.display = "none"
+  var xxx = document.getElementById("D3");
+    xxx.style.display = "none"
+  var xxxx = document.getElementById("D4");
+    xxxx.style.display = "none"
+  var bh = document.getElementById("bh");
+    bh.style.display = "none"
+  var nep = document.getElementById("m");
+    nep.style.display = "none"
+  var spam = document.getElementById("spam");
+    spam.style.display = "block"
+});
+document.addEventListener("msfullscreenchange", function() {
+  var x = document.getElementById("D1");
+    x.style.display = "none"
+  var xx = document.getElementById("D2");
+    xx.style.display = "none"
+  var xxx = document.getElementById("D3");
+    xxx.style.display = "none"
+  var xxxx = document.getElementById("D4");
+    xxxx.style.display = "none"
+  var bh = document.getElementById("bh");
+    bh.style.display = "none"
+  var nep = document.getElementById("m");
+    nep.style.display = "none"
+  var spam = document.getElementById("spam");
+    spam.style.display = "block"
+});    
 </script>
 <div class=bh id="bh">
 <button class=button2 onclick="nep()">▇</button>
