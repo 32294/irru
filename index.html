@@ -69,6 +69,40 @@ body {
 .sbutton {
   text-align: center;    
 }
+.qbutton1 {
+  border: solid;
+  border-color: #3399ff;
+  border-width: 1px 0px 1px 0px;
+  width: 19px;
+  color: #3399ff;
+  background-color: #2B2B2B;
+  text-align: center;
+  float: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+  outline:none;
+}
+.qbutton2 {
+  border: solid;
+  border-color: #3399ff;
+  border-width: 1px 0px 1px 0px;
+  width: 19px;
+  color: #3399ff;
+  background-color: #2B2B2B;
+  text-align: center;
+  float: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+  outline:none;
+}  
 </style>
 <script>
 function BH() {
@@ -224,6 +258,8 @@ var timer = setTimeout(function() {
 }, 1200000);    
 </script>
 <div class=bh id="bh">
+<button class=qbutton1 onclick="F1()">?</button>
+<button class=qbutton2 onclick="F1()">¿</button>
 <button class=button2 onclick="nep()">▇</button>
 <button class=button onclick="F1()">Normal RR</button>
 <button class=button onclick="F3()">In Order</button>
