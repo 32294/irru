@@ -68,6 +68,10 @@ body {
 }
 </style>
 <script>
+function BH() {
+  var bh = document.getElementById("bh");
+    bh.style.display = "none"
+}
 function F1() {
   var x = document.getElementById("D1");
     x.style.display = "block";
@@ -82,3 +86,23 @@ function F1() {
   var xxxxxx = document.getElementById("D6");
     xxxxxx.style.display = "none"
 </script>
+<div class=bh id="bh">
+<button class=button onclick="F1()">Nep</button>
+<button class=button onclick="BH()">Hide buttons</button>
+<button class=button onclick="F1()">Misile</button>  
+</div>
+<div hidden id="nep">
+<div class="resp-container">
+    <iframe class="resp-iframe" src="https://www.youtube.com/embed/Y5BVAEG50mM" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+<div hidden id="m">
+<div class="resp-container">
+    <iframe class="resp-iframe" src="https://www.youtube.com/embed/bZe5J8SVCYQ" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+<div hidden id="spam">
+<div class="resp-container">
+     <iframe class="resp-iframe" src="https://www.youtube.com/embed/OZiVsGR8u2w" frameborder="0" allow=autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen></iframe>
+</div>
+</div>
