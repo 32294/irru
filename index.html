@@ -33,8 +33,6 @@ body {
 }
 .button {
   border: none;
-  border-color: #3399ff;
-  border-width: 0px 0px 0px 1px;
   width: 130px;
   color: #3399ff;
   background-color: #2B2B2B;
@@ -42,10 +40,8 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  padding: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 4px;
+  margin-left: 2px;
+  margin-right: 2px;
   cursor: pointer;
   outline:none;
 }
@@ -53,54 +49,43 @@ body {
   background-color: #22222;
   width: 132px;
 }
-.obutton:hover {
+.hbutton:hover {
   background-color: #22222;
   width: 132px;
   margin-left: 1px;
 }
-.hbutton:hover {
+.obutton:hover {
   background-color: #22222;
   width: 132px;
   margin-right: 1px;
 }  
-.obutton {
+.hbutton {
   border: none;
-  border-color: #3399ff;
-  border-width: 1px 0px 1px 0px;
   width: 130px;
   color: #3399ff;
   background-color: #2B2B2B;
   text-align: center;
-  float: left;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin-left: 2px;
   margin-right: 2px;
-  margin-bottom:2px;
   cursor: pointer;
   outline:none;
 }
-.hbutton {
-  color: #3399ff;
+.obutton {
   border: none;
-  border-color: #3399ff;
-  border-width: 1px 0px 1px 0px;
   width: 130px;
   color: #3399ff;
   background-color: #2B2B2B;
   text-align: center;
-  float: right;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;  
+  font-size: 16px;
   margin-left: 2px;
   margin-right: 2px;
-  margin-bottom: 2px;
   cursor: pointer;
   outline:none;
-  a:visited {
-  color: #3399ff;
 }
 </style>
 <script>
@@ -257,8 +242,8 @@ var timer = setTimeout(function() {
 }, 1200000);    
 </script>
 <div class=bh id="bh">
-<button class=obutton onclick="window.location.href='/irru/other'">Other</button>
-<button class=hbutton onclick="bh()">Hide buttons</button>  
+<button class=hbutton onclick="bh()">Hide buttons</button> 
+<button class=obutton onclick="window.location.href='/irru/other'">Other</button> 
 <p>
 </p>
 <button class=button onclick="F1()">Normal rr</button>
